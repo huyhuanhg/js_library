@@ -1,33 +1,32 @@
-
 /*
 code này hướng tới xu hướng ES6
 ngoài ra còn có thể sử dụng Kĩ thuật Polyfill
 
 Ex:
-    if (!Object.prototype.test){
-        Object.prototype.test = function (e) {
+    if (!Element.prototype.test){
+        Element.prototype.test = function (e) {
             'use strict';
             console.log(e);
-            ...
+        ...
             statement.....
-            ...
+        ...
         }
     }
 */
 
 
-// import {Hquery as Query} from 'Query/Hquery.js';
-// import {Ajax} from 'Ajax/Ajax.js';
+// import Query from './Query/Hquery.js';
+// import Ajax from './Ajax/Ajax.js';
 
 function $(element) {
-    return new Hquery(element);
+    return new Hquery(element);//new Query(element);
 }
 
-$.e = function (element) {
-    return document.querySelector(element);
+$.e = function (selector) {
+    return document.querySelector(selector);
 }
-$.all = function (selectors) {
-    return document.querySelectorAll(selectors);
+$.all = function (selector) {
+    return document.querySelectorAll(selector);
 }
 $.loop = function (selector, callback) {
     if (Array.isArray(selector)) {

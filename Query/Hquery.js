@@ -1,6 +1,7 @@
-// import {Validator} from 'Validate/Validator.js';
+// import Validator from '../Validate/Validator.js';
 
-/*export */class Hquery {
+/*export default */
+class Hquery {
     #node;
     //all Element
     id;

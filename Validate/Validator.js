@@ -2,7 +2,7 @@
  * Đã trải qua nhiều phiên bản update
  * có thời gian sẽ viết code lại gọn gàng
  */
-/*export */class Validator {
+/*export default */class Validator {
     formGroup = false;
     formElement;
     fieldEvent = true;

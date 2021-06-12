@@ -1,4 +1,4 @@
-/*export */class Ajax {
+/*export default */class Ajax {
     get(URL, callback) {
         "use strict";
         // GET
